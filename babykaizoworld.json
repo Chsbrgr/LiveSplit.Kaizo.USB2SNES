@@ -1,0 +1,127 @@
+{
+  "name": "Baby Kaizo World",
+  "autostart": {
+    "active": "1",
+    "address": "0xDB4",
+    "value": "0x04",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x906",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x906",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Key Exit",
+      "address": "0x1434",
+      "value": "0x0030",
+      "type": "eq"
+    },
+    {
+      "name": "Boss Exit",
+      "address": "0x906",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x906",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Final Boss Exit",
+      "address": "0x906",
+      "value": "0x01",
+      "type": "eq",
+      "more": [
+          {
+              "address": "0x13C6",
+              "value": "0xFF",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Yellow Palace",
+      "address": "0x1f28",
+      "value": "0x01",
+      "type": "eq"
+    },
+    {
+      "name": "Blue Palace",
+      "address": "0x1f29",
+      "value": "0x01",
+      "type": "eq"
+    },
+    {
+      "name": "Green Palace",
+      "address": "0x1f27",
+      "value": "0x01",
+      "type": "eq"
+    },
+    {
+      "name": "Red Palace",
+      "address": "0x1f2a",
+      "value": "0x01",
+      "type": "eq"
+    }
+    ],
+    "alias": {
+        "Baby's Garden": "Normal Exit",
+        "Blargg's Hot Home": "Normal Exit",
+        "Baby Beach": "Normal Exit",
+        "Baby's Nightmare (S)": "Normal Exit",
+        "Palace of Blood": "Red Palace",
+        "Baby's Nightmare": "Normal Exit",
+        "Ropes Are No Toys": "Normal Exit",
+        "Sandstone Cavern": "Normal Exit",
+        "Dark Side of Kaizo": "Normal Exit",
+        "Hot Milk Castle": "Boss Exit",
+        "Enter The Forest": "Normal Exit",
+        "Plattform Hopping": "Normal Exit",
+        "Sunglasses Ready?": "Normal Exit",
+        "Precision Sucks": "Normal Exit",
+        "Nightmare Forest (S)": "Key Exit",
+        "Palace of Tears": "Blue Palace",
+        "Nightmare Forest": "Normal Exit",
+        "Run Forest": "Normal Exit",
+        "Sky Tree Jr": "Normal Exit",
+        "Dummys Fortress": "Boss Exit",
+        "Baby Shells!": "Normal Exit",
+        "Janked Up Slopes": "Normal Exit",
+        "Baby River": "Normal Exit",
+        "Smash the Ghosts (S)": "Normal Exit",
+        "Brightness Palace": "Yellow Palace",
+        "Smash the Ghosts": "Normal Exit",
+        "Chuck Garden": "Normal Exit",
+        "Dragon Caverns": "Normal Exit",
+        "Babys First Disco": "Normal Exit",
+        "Switch Technology": "Boss Exit",
+        "Babysitter Mole": "Normal Exit",
+        "Unhealthy Cola": "Normal Exit",
+        "Smashin Tears": "Normal Exit",
+        "No Time To Breathe (S)": "Key Exit",
+        "Kreen Koopa Kalace": "Green Palace",
+        "No Time To Breathe": "Normal Exit",
+        "Babys First P-Run": "Normal Exit",
+        "Baby Star": "Normal Exit",
+        "Kindergarten Castle": "Final Boss Exit",
+        "Switch Check": "Normal Exit",
+        "Discardation": "Normal Exit",
+        "Invisibility": "Normal Exit",
+        "Moletainity": "Normal Exit",
+        "Fuzzynation": "Normal Exit",
+        "Baby Finale": "Normal Exit"
+    }
+}

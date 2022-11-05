@@ -1,0 +1,87 @@
+{
+  "name": "Orcus",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x01",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x906",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x906",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Key Exit",
+      "address": "0x1434",
+      "value": "0x0030",
+      "type": "eq"
+    },
+    {
+      "name": "The Bridge",
+      "address": "0x1DFB",
+      "value": "0x3F",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x44",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Blue Palace",
+      "address": "0x1f29",
+      "value": "0x01",
+      "type": "eq"
+    },
+    {
+      "name": "Green Palace",
+      "address": "0x1f27",
+      "value": "0x01",
+      "type": "eq"
+    },
+    {
+      "name": "Red Palace",
+      "address": "0x1f2a",
+      "value": "0x01",
+      "type": "eq"
+    }
+    ],
+    "alias": {
+        "Eye of Abendego": "Normal Exit",
+        "Spectrewood": "Normal Exit",
+        "Lake Ocota": "Normal Exit",
+        "Valenhall": "Normal Exit",
+        "Screaming Jungle (S)": "Key Exit",
+        "Quesamian Hill": "Normal Exit",
+        "Screaming Jungle": "Normal Exit",
+        "Kaimuko Woods": "Green Palace",
+        "Storval Rise": "Normal Exit",
+        "Crystilan": "Normal Exit",
+        "Shaguang Desert (S)": "Key Exit",
+        "The Steaming Sea": "Normal Exit",
+        "Shaguang Desert": "Normal Exit",
+        "Bastardhall": "Normal Exit",
+        "Nar-Voth Swamp": "Normal Exit",
+        "Candlestone Caverns": "Blue Palace",
+        "Crossfen": "Normal Exit",
+        "House of Oblivion (S)": "Key Exit",
+        "Gorum Pots": "Normal Exit",
+        "House of Oblivion": "Normal Exit",
+        "Valashmai Jungle": "Normal Exit",
+        "Forest of Spirits": "Normal Exit",
+        "Phaedextrin's Maw": "Normal Exit",
+        "The Crimson Citadel": "Red Palace"
+    }
+}

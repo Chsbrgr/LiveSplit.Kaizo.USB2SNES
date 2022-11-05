@@ -1,0 +1,78 @@
+{
+  "name": "Quickie World",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x10",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x906",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x906",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+        "name": "Boss Exit",
+        "address": "0x906",
+        "value": "0x01",
+        "type": "eq",
+        "more": [
+            {
+                "address": "0x13C6",
+                "value": "0x01",
+                "type": "eq"
+            }
+        ]
+    },
+    {
+        "name": "Terminal Velocity",
+        "address": "0x1DFB",
+        "value": "0x0A",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x03",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+        "name": "Tower of Power",
+        "address": "0x1DFB",
+        "value": "0x06",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x03",
+                "type": "eq"
+             }
+            ]
+    }
+    ],
+    "alias": {
+        "Goomba Jam": "Normal Exit",
+        "Run Forest": "Normal Exit",
+        "GlitchCat Lake": "Normal Exit",
+        "Linkdead Shed": "Normal Exit",
+        "Color Code Cave": "Normal Exit",
+        "Chuck City": "Normal Exit",
+        "Inferno": "Normal Exit",
+        "Yellow Dwarf": "Normal Exit",
+        "Everything is Fine": "Normal Exit",
+        "Sawrfing Castle": "Normal Exit",
+        "Barb's Shiphole": "Normal Exit",
+        "Rainbow Road": "Normal Exit",
+        "White Moth Lair": "Boss Exit"
+    }
+}

@@ -1,0 +1,138 @@
+{
+  "name": "Invictus",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x11",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x906",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x906",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Key Exit",
+      "address": "0x1434",
+      "value": "0x0000",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1434",
+              "value": "0x0030",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Built to Fall",
+      "address": "0x906",
+      "value": "0x01",
+      "type": "eq",
+      "more": [
+          {
+              "address": "0x13C6",
+              "value": "0xFF",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Biohazard",
+      "address": "0x906",
+      "value": "0x01",
+      "type": "eq",
+      "more": [
+          {
+              "address": "0x13C6",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Absolute Power",
+      "address": "0x906",
+      "value": "0x01",
+      "type": "eq",
+      "more": [
+          {
+              "address": "0x13C6",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+        "name": "Invictus",
+        "address": "0x1DFB",
+        "value": "0x80",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x79",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+        "name": "Kamek",
+        "address": "0x1DFB",
+        "value": "0xFF",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x6B",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+      "name": "Green Palace",
+      "address": "0x1f27",
+      "value": "0x01",
+      "type": "eq"
+    },
+    {
+      "name": "Red Palace",
+      "address": "0x1f2a",
+      "value": "0x01",
+      "type": "eq"
+    }
+    ],
+    "alias": {
+        "Piranha Pipeway": "Normal Exit",
+        "Scorched Earth": "Normal Exit",
+        "One by One": "Key Exit",
+        "Sewer Smashing (S)": "Key Exit",
+        "Red Switch Palace": "Red Palace",
+        "Sewer Smashing": "Normal Exit",
+        "Plumber's Nightmare": "Normal Exit",
+        "Claustrophobia": "Normal Exit",
+        "Lake Bodom": "Normal Exit",
+        "Cemetary Bloom": "Normal Exit",
+        "Die-Tree": "Normal Exit",
+        "Frostbite (S)": "Key Exit",
+        "Green Switch Palace": "Green Palace",
+        "Frostbite": "Normal Exit",
+        "Rise Again": "Normal Exit",
+        "Biohazard": "Normal Exit",
+        "Bridge Secret": "Normal Exit",
+        "Bridge Normal": "Key Exit",
+        "Kamek Wood": "Normal Exit",
+        "Stellar": "Normal Exit",
+        "Absolute Power": "Boss Exit",
+        "Koopa Road": "Normal Exit"
+    }
+}

@@ -1,0 +1,82 @@
+{
+  "name": "Boogie Wonderland",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x14",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x1B99",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1B99",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Chateau d'agonie",
+      "address": "0x1DFB",
+      "value": "0x53",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x4F",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Boss Exit",
+      "address": "0x13c6",
+      "value": "0xFF",
+      "type": "eq"
+    },
+    {
+      "name": "Blue Palace",
+      "address": "0x1f29",
+      "value": "0x01",
+      "type": "eq"
+    },
+    {
+      "name": "Yellow Palace",
+      "address": "0x1f28",
+      "value": "0x01",
+      "type": "eq"
+    },
+    {
+      "name": "Red Palace",
+      "address": "0x1f2a",
+      "value": "0x01",
+      "type": "eq"
+    }
+    ],
+    "alias": {
+        "Sun Breeze": "Normal Exit",
+        "Autumn Leaves": "Normal Exit",
+        "Cruel Caverns (S)": "Normal Exit",
+        "Forgotten Palace": "Blue Palace",
+        "Cruel Caverns": "Normal Exit",
+        "Peril Ponds": "Normal Exit",
+        "C-C-Combo Breaker": "Normal Exit",
+        "Cloud Rider": "Normal Exit",
+        "Mount Kanki": "Normal Exit",
+        "Rex's Marsh": "Normal Exit",
+        "Abandoned Warehouse (S)": "Normal Exit",
+        "Discotheque": "Red Palace",
+        "Abandoned Warehouse": "Normal Exit",
+        "Spikes 'n' Bolts": "Boss Exit",
+        "Lorenzen's Tubes": "Normal Exit",
+        "Blackout Basement (S)": "Boss Exit",
+        "For Yoshi's Sake": "Yellow Palace",
+        "Blackout Basement": "Normal Exit",
+        "Frostbeth": "Normal Exit"
+    }
+}

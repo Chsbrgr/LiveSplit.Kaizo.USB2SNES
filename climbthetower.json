@@ -1,0 +1,73 @@
+{
+  "name": "Climb The Tower",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x01",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x906",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x906",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Boss Exit",
+      "address": "0x906",
+      "value": "0x01",
+      "type": "eq",
+      "more": [
+          {
+              "address": "0x13C6",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+        "name": "Ascension",
+        "address": "0x1DFB",
+        "value": "0x2B",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x03",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+        "name": "Built to Fall",
+        "address": "0x1DFB",
+        "value": "0x29",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x03",
+                "type": "eq"
+             }
+            ]
+    }
+    ],
+    "alias": {
+        "Castle Outskirts": "Normal Exit",
+        "Chutes and Ladders": "Normal Exit",
+        "Speed Runner": "Normal Exit",
+        "Vitamin K": "Normal Exit",
+        "White Zone": "Normal Exit",
+        "Pitch Black": "Normal Exit",
+        "Maw of the Hammer": "Boss Exit"
+
+    }
+}

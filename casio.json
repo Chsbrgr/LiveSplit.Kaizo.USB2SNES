@@ -1,0 +1,72 @@
+{
+  "name": "Casio Mario World",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x01",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x906",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x906",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Freaky Eyes",
+      "address": "0x1DFB",
+      "value": "0x13",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x0D",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Pardoner Fennel",
+      "address": "0x1DFB",
+      "value": "0x80",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x1A",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Blue Palace",
+      "address": "0x1f29",
+      "value": "0x01",
+      "type": "eq"
+    },
+    {
+      "name": "Red Palace",
+      "address": "0x1f2a",
+      "value": "0x01",
+      "type": "eq"
+    }
+    ],
+    "alias": {
+        "The Reeling": "Normal Exit",
+        "Sleep Dealer": "Normal Exit",
+        "Child Soldier": "Normal Exit",
+        "Everyday": "Red Palace",
+        "Power of Persuasion": "Normal Exit",
+        "Over the Ice": "Blue Palace",
+        "By Fire": "Normal Exit",
+        "Love in the Time of Lexapro": "Normal Exit"
+    }
+}

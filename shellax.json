@@ -1,0 +1,65 @@
+{
+  "name": "Shellax",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x01",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x906",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x906",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Key Exit",
+      "address": "0x1434",
+      "value": "0x0000",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1434",
+              "value": "0x0030",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+        "name": "Final Exit",
+        "address": "0x1DFB",
+        "value": "0xFF",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x35",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+      "name": "Red Palace",
+      "address": "0x1f2a",
+      "value": "0x01",
+      "type": "eq"
+    }
+    ],
+    "alias": {
+        "Goomba Gushin": "Normal Exit",
+        "Hangin On": "Normal Exit",
+        "Wrong Turn": "Normal Exit",
+        "Keenzwood (S)": "Key Exit",
+        "Kick Start": "Red Palace",
+        "Keenzwood": "Normal Exit",
+        "Puppy Palace": "Final Exit"
+    }
+}

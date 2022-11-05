@@ -1,0 +1,122 @@
+{
+  "name": "Quickie World 2",
+  "autostart": {
+    "active": "1",
+    "address": "0x100",
+    "value": "0x08",
+    "type": "eq",
+    "next": [
+        {
+            "address": "0x0100",
+            "value": "0x0a",
+            "type": "gt"
+        }
+    ]
+},
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x1B99",
+      "value": "0x01",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1B99",
+              "value": "0x00",
+              "type": "eq"
+          }
+      ]
+},
+    {
+        "name": "Key Exit",
+        "address": "0x1434",
+        "value": "0x0030",
+        "type": "eq"
+    },
+    {
+        "name": "Boss Exit",
+        "address": "0x13C6",
+        "value": "0xFF",
+        "type": "eq"
+    },
+    {
+        "name": "Final Boss Exit",
+        "address": "0x13C6",
+        "value": "0x01",
+        "type": "eq"
+    },
+    {
+        "name": "Buttermilk Palace",
+        "address": "0x1f28",
+        "value": "0x01",
+        "type": "eq"
+    },
+    {
+        "name": "Vapor Palace",
+        "address": "0x1f29",
+        "value": "0x01",
+        "type": "eq"
+    },
+    {
+        "name": "Soaring Saguaro",
+        "address": "0x1DFB",
+        "value": "0x44",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x03",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+        "name": "RB's Clock Tower",
+        "address": "0x1DFB",
+        "value": "0x43",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x03",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+        "name": "Chris G Spot",
+        "address": "0x1DFB",
+        "value": "0x3D",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x03",
+                "type": "eq"
+             }
+            ]
+    }
+    ],
+    "alias": {
+        "Happy Birthday": "Normal Exit",
+        "The Shen": "Normal Exit",
+        "Take Five": "Normal Exit",
+        "Field of Dreams": "Normal Exit",
+        "Field of Dreams (S)": "Key Exit",
+        "Roll the Bones": "Boss Exit",
+        "The Batcave": "Normal Exit",
+        "To the Limit": "Normal Exit",
+        "Jurassic Jungle": "Normal Exit",
+        "Chris G Spot (S)": "Key Exit",
+        "Hot Potato": "Normal Exit",
+        "Elusive Numbers": "Normal Exit",
+        "Pokey Desert": "Normal Exit",
+        "Blocks on the Rocks": "Normal Exit",
+        "Yoshi's Lair": "Boss Exit",
+        "Yoshi's Lair (Spare)": "Key Exit",
+        "Spaceballs": "Normal Exit",
+        "Mega Scottage": "Normal Exit",
+        "Sawrfing Ruins": "Normal Exit",
+        "Wedding Nails": "Final Boss Exit"
+    }
+}

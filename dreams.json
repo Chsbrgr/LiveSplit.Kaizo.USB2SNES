@@ -1,0 +1,65 @@
+{
+  "name": "Dreams",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x01",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x906",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x906",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+        "name": "Thwompcastle",
+        "address": "0x1DFB",
+        "value": "0x39",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x04",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+        "name": "Final Destination",
+        "address": "0x1DFB",
+        "value": "0xFF",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x36",
+                "type": "eq"
+             }
+            ]
+    }
+    ],
+    "alias": {
+        "Misty Lake": "Normal Exit",
+        "Leaf Me Alone!": "Normal Exit",
+        "Deadly Temple": "Normal Exit",
+        "Mole Plague": "Normal Exit",
+        "Underground": "Normal Exit",
+        "Rotzwueste": "Normal Exit",
+        "Tight Grip": "Normal Exit",
+        "Gotham City": "Normal Exit",
+        "U Like Shells?": "Normal Exit",
+        "Rexen86": "Normal Exit",
+        "Get Out": "Normal Exit",
+        "Sky is the Limit": "Normal Exit",
+        "Rope Trip": "Normal Exit"
+    }
+}

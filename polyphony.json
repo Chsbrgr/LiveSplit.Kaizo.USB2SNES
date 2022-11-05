@@ -1,0 +1,94 @@
+{
+  "name": "Polyphony",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x01",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x906",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x906",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Key Exit",
+      "address": "0x1434",
+      "value": "0x0030",
+      "type": "eq"
+    },
+    {
+      "name": "The Tower",
+      "address": "0x1DFB",
+      "value": "0x34",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x03",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Artemis",
+      "address": "0x1DFB",
+      "value": "0x57",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x4A",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Yellow Palace",
+      "address": "0x1f28",
+      "value": "0x01",
+      "type": "eq"
+    },
+    {
+      "name": "Red Palace",
+      "address": "0x1f2a",
+      "value": "0x01",
+      "type": "eq"
+    }
+    ],
+    "alias": {
+        "Grizzly Hills": "Normal Exit",
+        "Catnip Canyon (S)": "Key Exit",
+        "Catnip Catacombs": "Normal Exit",
+        "Old Garrison": "Red Palace",
+        "Catnip Canyon": "Normal Exit",
+        "Wishy-Washy River": "Normal Exit",
+        "Cloudy Meadows": "Normal Exit",
+        "Netherworld (S)": "Normal Exit",
+        "The Trove": "Yellow Palace",
+        "Netherworld": "Normal Exit",
+        "Dark Astoria": "Normal Exit",
+        "Steel Canyon": "Normal Exit",
+        "Shifting Fortress": "Normal Exit",
+        "Skies of Conflict": "Normal Exit",
+        "Airshipvania": "Normal Exit",
+        "Polyphonic Palace": "Normal Exit",
+        "Dark Astoria (S)": "Key Exit",
+        "Journey": "Normal Exit",
+        "Folivora Cliffs": "Normal Exit",
+        "Moisty Mountains": "Normal Exit",
+        "Between": "Normal Exit",
+        "Arisen Peak": "Normal Exit",
+        "Netherworld (S) 2": "Normal Exit",
+        "The Purple Pinnacle": "Normal Exit"
+    }
+}

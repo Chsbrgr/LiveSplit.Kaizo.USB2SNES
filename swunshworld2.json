@@ -1,0 +1,123 @@
+{
+  "name": "Super Swunsh World 2",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x01",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x1B99",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1B99",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Key Exit",
+      "address": "0x1434",
+      "value": "0x0030",
+      "type": "eq"
+    },
+    {
+      "name": "Time is Useless",
+      "address": "0x1DFB",
+      "value": "0x2D",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x04",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Saw Climb",
+      "address": "0x1DFB",
+      "value": "0x26",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x03",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Swunshy Star",
+      "address": "0x1DFB",
+      "value": "0x20",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x03",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Mark of Mastery",
+      "address": "0x1DFB",
+      "value": "0xFF",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x38",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Final Escape",
+      "address": "0x1DFB",
+      "value": "0xFF",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x38",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Yellow Palace",
+      "address": "0x1f28",
+      "value": "0x01",
+      "type": "eq"
+    },
+    {
+      "name": "Green Palace",
+      "address": "0x1f27",
+      "value": "0x01",
+      "type": "eq"
+    }
+    ],
+    "alias": {
+        "Rexciting Beginning": "Normal Exit",
+        "Kill the Boshy!": "Normal Exit",
+        "A Friend Returns (S)": "Key Exit",
+        "Tap-Tap Palace": "Green Palace",
+        "A Friend Returns": "Normal Exit",
+        "Fighting Grounds": "Normal Exit",
+        "Slippery Slide": "Normal Exit",
+        "Kick Heaven (S)": "Key Exit",
+        "Snake Palace": "Yellow Palace",
+        "Kick Heaven": "Normal Exit",
+        "POW-er": "Normal Exit",
+        "Mark of Mastery (S)": "Normal Exit",
+        "Rip Rope": "Normal Exit",
+        "Gravity Rush": "Normal Exit"
+    }
+}

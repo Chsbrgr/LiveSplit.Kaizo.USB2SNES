@@ -1,0 +1,103 @@
+{
+  "name": "Akogare 2",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x01",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x1B99",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1B99",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Key Exit",
+      "address": "0x1434",
+      "value": "0x0030",
+      "type": "eq"
+    },
+    {
+      "name": "High Peak",
+      "address": "0x1DFB",
+      "value": "0x98",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x03",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Reaper's Maw",
+      "address": "0x1DFB",
+      "value": "0xFF",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x38",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Blue Palace",
+      "address": "0x1f29",
+      "value": "0x01",
+      "type": "eq"
+    },
+    {
+      "name": "Green Palace",
+      "address": "0x1f27",
+      "value": "0x01",
+      "type": "eq"
+    },
+    {
+      "name": "Red Palace",
+      "address": "0x1f2a",
+      "value": "0x01",
+      "type": "eq"
+    }
+    ],
+    "alias": {
+        "Pleasant Path": "Normal Exit",
+        "Ordalia Grove": "Normal Exit",
+        "Creepy Steeple": "Normal Exit",
+        "Oho Oasis": "Normal Exit",
+        "Arid Flats": "Normal Exit",
+        "Full Moon": "Normal Exit",
+        "Ossuary Hollow (S)": "Key Exit",
+        "Pipstrello Palace": "Red Palace",
+        "Ossuary Hollow": "Normal Exit",
+        "Derelict Conduit": "Normal Exit",
+        "Impact Crater": "Normal Exit",
+        "Golgotha": "Normal Exit",
+        "Fogbound Fjord": "Normal Exit",
+        "Fungal Wastes": "Normal Exit",
+        "Ruined Arboretum": "Normal Exit",
+        "Whiteleaf Memorial (S)": "Key Exit",
+        "Dormant Chaparral": "Green Palace",
+        "Whiteleaf Memorial": "Normal Exit",
+        "Searing Crags": "Normal Exit",
+        "Submerged Sheol": "Normal Exit",
+        "Tower of Fate": "Key Exit",
+        "Fahr Outpost": "Normal Exit",
+        "Obsidian Vale (S)": "Key Exit",
+        "Joke's End": "Blue Palace",
+        "Obsidian Vale": "Normal Exit",
+        "Northern Range": "Normal Exit",
+        "Riders Passage": "Normal Exit"
+    }
+}

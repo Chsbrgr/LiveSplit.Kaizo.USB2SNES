@@ -1,0 +1,90 @@
+{
+  "name": "Silencio",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x01",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x1B99",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1B99",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Key Exit",
+      "address": "0x1434",
+      "value": "0x0030",
+      "type": "eq"
+    },
+    {
+        "name": "No Hay Banda",
+        "address": "0x13C6",
+        "value": "0x00",
+        "type": "eq",
+        "next": [
+            {
+                "address": "0x13C6",
+                "value": "0x01",
+                "type": "eq"
+            }
+        ]
+    },
+    {
+        "name": "Boxes Inside Boxes",
+        "address": "0x13C6",
+        "value": "0x00",
+        "type": "eq",
+        "next": [
+            {
+                "address": "0x13C6",
+                "value": "0xFF",
+                "type": "eq"
+            }
+        ]
+    },
+    {
+        "name": "Credits",
+        "address": "0x1DFB",
+        "value": "0xFF",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x58",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+        "name": "Yellow Palace",
+        "address": "0x1f28",
+        "value": "0x01",
+        "type": "eq"
+    }
+    ],
+    "alias": {
+        "My Dharma":"Normal Exit",
+        "Cooper's Dreams":"Normal Exit",
+        "Dive Within":"Normal Exit",
+        "Blue Pine Mountain":"Normal Exit",
+        "Time and Time Again":"Normal Exit",
+        "One Eyed Jack's (S)":"Key Exit",
+        "Traces to Nowhere":"Yellow Palace",
+        "One Eyed Jack's":"Normal Exit",
+        "Cosmic Flashlight":"Normal Exit",
+        "Tulpa":"Key Exit",
+        "Northwest Passage":"Normal Exit",
+        "Nonexistent":"Normal Exit",
+        "Beyond the Fire":"Credits"
+    }
+}

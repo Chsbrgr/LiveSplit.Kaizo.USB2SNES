@@ -1,0 +1,85 @@
+{
+	"name": "Road to New Haven",
+	"autostart": {
+		"active": "1",
+		"address": "0x0100",
+		"value": "0x08",
+		"type": "eq",
+		"next": [
+			{
+				"address": "0x0100",
+				"value": "0x09",
+				"type": "gt"
+			}
+		]
+	},
+	"definitions": [
+		{
+			"name": "Normal Exit",
+			"address": "0x1B99",
+			"value": "0x01",
+			"type": "eq",
+			"next": [
+				{
+					"address": "0x1B99",
+					"value": "0x00",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Boom Boom Exit",
+			"address": "0x13C6",
+			"value": "0xFF",
+			"type": "eq"
+		},
+		{
+			"name": "Any% Credits Wait",
+			"address": "0xDD5",
+			"value": "0x01",
+			"type": "eq"
+		},
+		{
+			"name": "100% Credits Wait",
+			"address": "0xDD5",
+			"value": "0x02",
+			"type": "eq"
+		},
+		{
+			"name": "Seaside Saunter Key Get",
+			"address": "0x1F27",
+			"value": "0x01",
+			"type": "eq"
+		},
+		{
+			"name": "Sky-Tree Tussle Key Get",
+			"address": "0x1F28",
+			"value": "0x01",
+			"type": "eq"
+		},
+		{
+			"name": "Bow-Out Key Get",
+			"address": "0x1F29",
+			"value": "0x01",
+			"type": "eq"
+		},
+		{
+			"name": "Golden Hour Key Get",
+			"address": "0x1F2A",
+			"value": "0x01",
+			"type": "eq"
+		}
+	],
+	"alias": {
+		"Seaside Saunter": "Normal Exit",
+		"Sky-Tree Tussle": "Normal Exit",
+		"Golden Hour": "Normal Exit",
+		"Credits Wait": "Credits Wait",
+		"Bow Out (Any%)": "Boom Boom Exit",
+		"Bow Out (100%)": "Boom Boom Exit",
+		"Seaside Saunter Key": "Seaside Saunter Key Get",
+		"Sky-Tree Tussle Key": "Sky-Tree Tussle Key Get",
+		"Bow Out Key": "Bow Out Key get",
+		"Golden Hour Key": "Golden Hour Key Get"
+	}
+}

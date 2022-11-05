@@ -1,0 +1,61 @@
+{
+  "name": "El Dorado",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x83",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x906",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x906",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+        "name": "El Dorado",
+        "address": "0x1DFB",
+        "value": "0x38",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x40",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+        "name": "Ascension",
+        "address": "0x1DFB",
+        "value": "0x33",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x00",
+                "type": "eq"
+             }
+            ]
+    }
+    ],
+    "alias": {
+        "Party Hats": "Normal Exit",
+        "Slime Time": "Normal Exit",
+        "DMT": "Normal Exit",
+        "16x16": "Normal Exit",
+        "Still Alive": "Normal Exit",
+        "Silhouette Summit": "Normal Exit",
+        "Montagne": "Normal Exit",
+        "Florida Man": "Normal Exit",
+        "Admiral Snackbar": "Normal Exit"
+    }
+}

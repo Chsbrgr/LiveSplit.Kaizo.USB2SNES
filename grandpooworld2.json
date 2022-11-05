@@ -1,0 +1,209 @@
+{
+  "name": "Grand Poo World 2",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x14",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x906",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x906",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Key Exit",
+      "address": "0x1434",
+      "value": "0x0030",
+      "type": "eq"
+    },
+    {
+      "name": "Sen's Fortress",
+      "address": "0x906",
+      "value": "0x01",
+      "type": "eq",
+      "more": [
+          {
+              "address": "0x13C6",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "House of the Undying",
+      "address": "0x906",
+      "value": "0x01",
+      "type": "eq",
+      "more": [
+          {
+              "address": "0x13C6",
+              "value": "0xFF",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Idle Hands",
+      "address": "0x906",
+      "value": "0x01",
+      "type": "eq",
+      "more": [
+          {
+              "address": "0x13C6",
+              "value": "0xFF",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+        "name": "Caradhras",
+        "address": "0x1DFB",
+        "value": "0x2C",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x03",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+        "name": "Yacht Club Castle",
+        "address": "0x1DFB",
+        "value": "0x53",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x03",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+        "name": "Weathertop (S)",
+        "address": "0x1DFB",
+        "value": "0x54",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x03",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+        "name": "The Orbliette",
+        "address": "0x1DFB",
+        "value": "0x5A",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x03",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+        "name": "The Escape",
+        "address": "0x1DFB",
+        "value": "0x56",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x5C",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+        "name": "Bad Ending",
+        "address": "0x1DFB",
+        "value": "0x58",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x5B",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+        "name": "The Thousand Halls",
+        "address": "0x1DFB",
+        "value": "0x4C",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x4F",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+        "name": "Bowser",
+        "address": "0x1DFB",
+        "value": "0x65",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x64",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+      "name": "Yellow Palace",
+      "address": "0x1f28",
+      "value": "0x01",
+      "type": "eq"
+    },
+    {
+      "name": "Blue Palace",
+      "address": "0x1f29",
+      "value": "0x01",
+      "type": "eq"
+    },
+    {
+      "name": "Red Palace",
+      "address": "0x1f2a",
+      "value": "0x01",
+      "type": "eq"
+    }
+    ],
+    "alias": {
+        "Marathon": "Normal Exit",
+        "Laser Lifts": "Normal Exit",
+        "Riptide Slide": "Normal Exit",
+        "Thalassophobia (S)": "Key Exit",
+        "Arrakis": "Normal Exit",
+        "Sunset Breeze": "Normal Exit",
+        "Deuce Lair (S)": "Key Exit",
+        "Poo's Laughter House": "Yellow Palace",
+        "Deuce Lair": "Normal Exit",
+        "Mirkwood": "Normal Exit",
+        "Hanzo Castle": "Red Palace",
+        "Weathertop": "Normal Exit",
+        "Danger Zone": "Normal Exit",
+        "The Eyrie": "Normal Exit",
+        "The Thousand Halls (S)": "Key Exit",
+        "The Nexus Palace": "Blue Palace"
+    }
+}

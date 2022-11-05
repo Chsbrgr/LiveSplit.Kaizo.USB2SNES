@@ -1,0 +1,93 @@
+{
+  "name": "The Joy of Kaizo",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x03",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x1B99",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1B99",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Boss Exit",
+      "address": "0x13C6",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x13C6",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Key Exit",
+      "address": "0x1434",
+      "value": "0x0030",
+      "type": "eq"
+    },
+    {
+      "name": "Majestic Pine",
+      "address": "0x1DFB",
+      "value": "0x43",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x03",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Graceful Waterfall",
+      "address": "0x1DFB",
+      "value": "0x31",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x03",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Green Palace",
+      "address": "0x1f27",
+      "value": "0x01",
+      "type": "eq"
+    }
+    ],
+    "alias": {
+        "Nature's Splendor": "Normal Exit",
+        "Secluded Beach": "Normal Exit",
+        "Forest Down": "Normal Exit",
+        "Black Waterfall": "Normal Exit",
+        "Cactus at Sunset": "Normal Exit",
+        "Days Gone By": "Boss Exit",
+        "The Windmill": "Normal Exit",
+        "Evergreens at Sunset": "Key Exit",
+        "Campfire": "Normal Exit",
+        "Night Light": "Boss Exit",
+        "Winter Sawscape": "Normal Exit",
+        "Mountain Beauty": "Normal Exit",
+        "Icy Lake": "Normal Exit",
+        "Anatomy of a Wave": "Normal Exit",
+        "Ocean Sunrise": "Green Palace",
+        "A Walk in the Woods": "Boss Exit"
+    }
+}

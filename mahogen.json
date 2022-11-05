@@ -1,0 +1,82 @@
+{
+  "name": "Mahogen",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x12",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x906",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x906",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+        "name": "Yellow Palace",
+        "address": "0x1f28",
+        "value": "0x01",
+        "type": "eq"
+    },
+    {
+        "name": "Red Palace",
+        "address": "0x1f2a",
+        "value": "0x01",
+        "type": "eq"
+    },
+    {
+        "name": "Big Boo Hideout!",
+        "address": "0x1DFB",
+        "value": "0x00",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x03",
+                "type": "eq"
+             }
+            ]
+    },
+    {
+        "name": "The End!",
+        "address": "0x1DFB",
+        "value": "0x3D",
+        "type": "eq",
+        "next": [
+             {
+                "address": "0x1DFB",
+                "value": "0x03",
+                "type": "eq"
+             }
+            ]
+    }
+    ],
+    "alias": {
+        "Mole-lishous": "Normal Exit",
+        "Mountain Climber": "Normal Exit",
+        "Emerald Caverns": "Normal Exit",
+        "Deathly Swamp (S)": "Normal Exit",
+        "Saw Factory": "Yellow Palace",
+        "Deathly Swamp": "Normal Exit",
+        "Sweet Dolphins": "Normal Exit",
+        "Kick Start": "Normal Exit",
+        "Slide!": "Normal Exit",
+        "Vulcanic Activity": "Normal Exit",
+        "Shyguy Desert": "Normal Exit",
+        "Blargh! (S)": "Normal Exit",
+        "Jump!": "Red Palace",
+        "Blargh!": "Normal Exit",
+        "You Good?": "Normal Exit",
+        "Maniacs Grassland": "Normal Exit",
+        "Motorhouse": "Normal Exit",
+        "Switching Power": "Normal Exit"
+    }
+}

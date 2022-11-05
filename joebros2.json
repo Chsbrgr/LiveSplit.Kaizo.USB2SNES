@@ -1,0 +1,91 @@
+{
+  "name": "Super Joe Bros. 2",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x01",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x906",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x906",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Key Exit",
+      "address": "0x1434",
+      "value": "0x0030",
+      "type": "eq"
+    },
+    {
+      "name": "Rb's Treehouse",
+      "address": "0x1DFB",
+      "value": "0x40",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x03",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+      "name": "Rooms for Rent",
+      "address": "0x1DFB",
+      "value": "0x13",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1DFB",
+              "value": "0x31",
+              "type": "eq"
+          }
+      ]
+    },
+
+    {
+      "name": "Blue Palace",
+      "address": "0x1f29",
+      "value": "0x01",
+      "type": "eq"
+    },
+    {
+      "name": "Green Palace",
+      "address": "0x1f27",
+      "value": "0x01",
+      "type": "eq"
+    }
+    ],
+    "alias": {
+        "Costas De Dante": "Normal Exit",
+        "Donnys Rollin Moles": "Normal Exit",
+        "G-Muffs on High": "Normal Exit",
+        "Cave of the Spig": "Normal Exit",
+        "Dervs Stone Sanctum (S)": "Key Exit",
+        "Benders Mind Palace": "Green Palace",
+        "Dervs Stone Sanctum": "Normal Exit",
+        "Groggy's Garrison": "Normal Exit",
+        "TooPlayas Lost Wood": "Normal Exit",
+        "Barbarous Bridges": "Normal Exit",
+        "Riddle Me This (S)": "Key Exit",
+        "The Voipah's Palace": "Blue Palace",
+        "Riddle Me This": "Normal Exit",
+        "AD's Oof Troop": "Normal Exit",
+        "Castle Courtyard": "Normal Exit",
+        "Castle Courtyard (S)": "Normal Exit",
+        "Zaddy's Big Day Out": "Normal Exit",
+        "Marley Kicks Glass": "Normal Exit",
+        "Resnovs Cape Escape": "Normal Exit",
+        "Credits": "Normal Exit"
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "name": "Romhack Races",
+    "autostart": {
+        "active": "1",
+        "address": "0x0100",
+        "value": "0x08",
+        "type": "eq",
+        "next": [
+            {
+                "address": "0x0100",
+                "value": "0x0a",
+                "type": "gt"
+            }
+        ],
+        "_comment": "Looks for file select screen, then any screen after 1p/2p start. This will autostart immediately on starting the game, and prevent the autostart from triggering while resetting splits before console"
+    },
+    "definitions": [
+        {
+            "name": "Level completed",
+            "address": "0x1B99",
+            "value": "0x01",
+            "type": "eq",
+            "next": [
+                {
+                    "address": "0x1B99",
+                    "value": "0x00",
+                    "type": "eq"
+                }
+            ],
+                  "_comment": "This works for the normal goal tape, looks for the walking peace sign animation, triggers when screen fades to black after iris in."
+        },
+        {
+            "name": "Key Exit",
+            "address": "0x1434",
+            "value": "0x0030",
+            "type": "eq",
+            "_comment": "Triggers on the key in the keyhole audio"
+        },
+        {
+            "name": "Boss Exit",
+            "address": "0x13C6",
+            "value": "0x00",
+            "type": "gt",
+            "_comment": "Triggers on any Boss Completed event"
+        },
+            {
+            "name": "Yellow Switch Palace",
+            "address": "0x1F27",
+            "value": "0x01",
+            "type": "eq"
+        },
+        {
+            "name": "Green Switch Palace",
+            "address": "0x1F28",
+            "value": "0x01",
+            "type": "eq"
+        },
+        {
+            "name": "Red Switch Palace",
+            "address": "0x1F29",
+            "value": "0x01",
+            "type": "eq"
+        },
+        {
+            "name": "Blue Switch Palace",
+            "address": "0x1F2A",
+            "value": "0x01",
+            "type": "eq"
+        }
+    ]
+}
