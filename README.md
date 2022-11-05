@@ -1,5 +1,8 @@
 # LiveSplit.Kaizo.USB2SNES
 This Repository is to help gather, create new, and improve existing Configuration files for the Livesplit USB2SNES Autosplitter.
+Most of the files in this repositiory were started by NecroSky90 on SMWCentral (https://www.smwcentral.net/?p=profile&id=43932)
+After discovering these last year, and this year (2022) started building my own, I wanted somewhere we could easily add more configurations to.
+Please feel free to fork this repo, make your own, or improve the configs here, and pull request back. the more the merrier.
 
 # What is the USB2SNES Autosplitter
 A livesplit component for splitting various kaizo romhacks automatically via USB2SNES, based on the work of tewtal and Skarsnik
