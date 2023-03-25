@@ -1,0 +1,88 @@
+{
+  "name": "Cute Kaizo World",
+  "autostart": {
+    "active": "1",
+    "address": "0x1ED2",
+    "value": "0x01",
+    "type": "eq"
+  },
+  "definitions": [
+    {
+      "name": "Normal Exit",
+      "address": "0x906",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x906",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    },
+    {
+        "name": "Key Exit",
+        "address": "0x1434",
+        "value": "0x0030",
+        "type": "eq"
+    },
+    {
+        "name": "Boss Exit",
+        "address": "0x906",
+        "value": "0x01",
+        "type": "eq",
+        "more": [
+            {
+                "address": "0x13C6",
+                "value": "0x01",
+                "type": "eq"
+            }
+        ]
+    },
+    {
+        "name": "Final Boss Exit",
+        "address": "0x906",
+        "value": "0x01",
+        "type": "eq",
+        "more": [
+            {
+                "address": "0x13C6",
+                "value": "0xFF",
+                "type": "eq"
+            }
+        ]
+    },
+    {
+        "name": "Pink Switch",
+        "address": "0x1f29",
+        "value": "0x01",
+        "type": "eq"
+    },
+    {
+        "name": "Turquoise Switch",
+        "address": "0x1f27",
+        "value": "0x01",
+        "type": "eq"
+    }
+    ],
+    "alias": {
+        "Canterbury Woods": "Normal Exit",
+        "Brattleboro": "Normal Exit",
+        "Kimball (S)": "Key Exit",
+        "(S) Kimball": "Key Exit",
+        "Pink Switch": "Pink Switch",
+        "Kimball (S)": "Normal Exit",
+        "(R) Kimball": "Normal Exit",
+        "Stonebridge": "Normal Exit",
+        "Intervale": "Normal Exit",
+        "Windsor": "Normal Exit",
+        "Oak Hill": "Normal Exit",
+        "Pat's Peak (S)": "Key Exit",
+        "(S) Pat's Peak": "Key Exit",
+        "Turquoise Switch": "Turquoise Switch",
+        "Pat's Peak (R)": "Normal Exit",
+        "(R) Pat's Peak": "Normal Exit",
+        "Blossom Hill": "Normal Exit",
+        "Zalzion Castle": "Final Boss Exit"
+    }
+}
