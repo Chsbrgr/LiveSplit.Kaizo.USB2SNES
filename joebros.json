@@ -1,25 +1,32 @@
 {
   "name": "Super Joe Bros.",
   "autostart": {
-    "active": "1",
-    "address": "0x1ED2",
-    "value": "0x01",
-    "type": "eq"
-  },
+		"active": "1",
+		"address": "0x100",
+		"value": "0x08",
+		"type": "eq",
+		"next": [
+			{
+				"address": "0x0100",
+				"value": "0x0a",
+				"type": "gt"
+			}
+		]
+	},
   "definitions": [
     {
-      "name": "Normal Exit",
-      "address": "0x906",
-      "value": "0x00",
-      "type": "eq",
-      "next": [
-          {
-              "address": "0x906",
-              "value": "0x01",
-              "type": "eq"
-          }
-      ]
-    }
+		"name": "Normal Exit",
+		"address": "0x1B99",
+		"value": "0x01",
+		"type": "eq",
+		"next": [
+			{
+				"address": "0x1B99",
+				"value": "0x00",
+				"type": "eq"
+			}
+		]
+	}
     ],
     "alias": {
         "Flangooooo Flex": "Normal Exit",
