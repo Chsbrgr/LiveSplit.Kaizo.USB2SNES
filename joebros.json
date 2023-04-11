@@ -1,0 +1,45 @@
+{
+  "name": "Super Joe Bros.",
+  "autostart": {
+		"active": "1",
+		"address": "0x100",
+		"value": "0x08",
+		"type": "eq",
+		"next": [
+			{
+				"address": "0x0100",
+				"value": "0x0a",
+				"type": "gt"
+			}
+		]
+	},
+  "definitions": [
+    {
+		"name": "Normal Exit",
+		"address": "0x1B99",
+		"value": "0x01",
+		"type": "eq",
+		"next": [
+			{
+				"address": "0x1B99",
+				"value": "0x00",
+				"type": "eq"
+			}
+		]
+	}
+    ],
+    "alias": {
+        "Flangooooo Flex": "Normal Exit",
+        "Zaddies Brown Spot": "Normal Exit",
+        "Rb's Spin to Win": "Normal Exit",
+        "Resnov Ruins": "Normal Exit",
+        "Vipers Nest": "Normal Exit",
+        "Groggies Grotto": "Normal Exit",
+        "Space Pastries": "Normal Exit",
+        "Lefty's Blue Cruise": "Normal Exit",
+        "Dervs Dank Dugout": "Normal Exit",
+        "Tooplayas Treetops": "Normal Exit",
+        "Castillo De Dante": "Normal Exit",
+        "Credits": "Normal Exit"
+    }
+}
