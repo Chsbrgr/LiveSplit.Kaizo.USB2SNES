@@ -26,20 +26,46 @@
 				"type": "eq"
 			}
 		]
-	}
+	},
+    {
+        "name": "Boss Exit",
+        "address": "0x13C6",
+        "value": "0x01",
+        "type": "eq",
+		"next": [
+			{
+				"address": "0x13C6",
+				"value": "0x00",
+				"type": "eq"
+			}
+		]
+    },
+	{
+      "name": "Credits ORB Collection",
+      "address": "0x906",
+      "value": "0x00",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x906",
+              "value": "0x01",
+              "type": "eq"
+          }
+      ]
+    }
     ],
     "alias": {
         "Flangooooo Flex": "Normal Exit",
         "Zaddies Brown Spot": "Normal Exit",
         "Rb's Spin to Win": "Normal Exit",
         "Resnov Ruins": "Normal Exit",
-        "Vipers Nest": "Normal Exit",
+        "Vipers Nest": "Boss Exit",
         "Groggies Grotto": "Normal Exit",
         "Space Pastries": "Normal Exit",
         "Lefty's Blue Cruise": "Normal Exit",
         "Dervs Dank Dugout": "Normal Exit",
         "Tooplayas Treetops": "Normal Exit",
-        "Castillo De Dante": "Normal Exit",
-        "Credits": "Normal Exit"
+        "Castillo De Dante": "Boss Exit",
+        "Credits": "Credits ORB Collection"
     }
 }
