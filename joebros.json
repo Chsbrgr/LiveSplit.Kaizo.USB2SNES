@@ -30,8 +30,8 @@
     {
         "name": "Boss Exit",
         "address": "0x13C6",
-        "value": "0x01",
-        "type": "eq",
+        "value": "0x00",
+        "type": "gt",
 		"next": [
 			{
 				"address": "0x13C6",
