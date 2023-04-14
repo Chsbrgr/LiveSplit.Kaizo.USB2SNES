@@ -1,0 +1,126 @@
+{
+    "name": "Love Yourself",
+    "autostart": {
+        "active": "1",
+        "address": "0x0100",
+        "value": "0x07",
+        "type": "eq",
+        "next": [
+            {
+                "address": "0x0100",
+                "value": "0x0a",
+                "type": "gt"
+            }
+        ],
+        "_comment": "Looks for file select screen, then any screen after 1p/2p start. This will autostart immediately on starting the game, and prevent the autostart from triggering while resetting splits before console"
+    },
+    "definitions": [
+        {
+            "name": "Level completed",
+            "address": "0x1b99",
+            "value": "0x01",
+            "type": "eq",
+            "next": [
+                {
+                    "address": "0x1b99",
+                    "value": "0x00",
+                    "type": "eq"
+                }
+            ],
+            "_comment": "This looks for the fade to black similar to a normal exit."
+        },
+        {
+            "name": "Key Exit",
+            "address": "0x1434",
+            "value": "0x0030",
+            "type": "eq",
+            "_comment": "Triggers on the key in the keyhole audio"
+        },
+        {
+            "name": "Orb Exit",
+            "address": "0x1493",
+            "value": "0x00",
+            "type": "eq",
+            "next": [
+                {
+                    "address": "0x1493",
+                    "value": "0xFF",
+                    "type": "eq"
+                }
+            ],
+            "_comment": "Triggers on Orb in Vertical Level"
+        },
+        {
+            "name": "Boss Exit",
+            "address": "0x13C6",
+            "value": "0x00",
+            "type": "gt",
+            "_comment": "Triggers on any Boss Completed event"
+        },
+            {
+            "name": "Yellow Switch Palace",
+            "address": "0x1F27",
+            "value": "0x01",
+            "type": "eq"
+        },
+        {
+            "name": "Green Switch Palace",
+            "address": "0x1F28",
+            "value": "0x01",
+            "type": "eq"
+        },
+        {
+            "name": "Red Switch Palace",
+            "address": "0x1F29",
+            "value": "0x01",
+            "type": "eq"
+        },
+        {
+            "name": "Blue Switch Palace",
+            "address": "0x1F2A",
+            "value": "0x01",
+            "type": "eq"
+        },
+        {
+            "name": "Enter Credits",
+            "address": "0x5D",
+            "value": "0x0a",
+            "type": "eq",
+            "_comment": "Looks for 0A number of screens, which only the credits level has AFTER the Fire Within is complete"
+        },
+        {
+            "name": "Grab Heart",
+            "address": "0x906",
+            "value": "0x00",
+            "type": "eq",
+            "next": [
+            {
+                  "address": "0x906",
+                  "value": "0x01",
+                  "type": "eq"
+            }
+      ]
+        }
+    ],
+    "alias": {
+        "Bop To It": "Level completed",
+        "Pythagoramboo": "Orb Exit",
+        "Concrete Schoolyard": "Level completed",
+        "Playfourming": "Level completed",
+        "A Lil Castle": "Key Exit",
+        "Round The Bend": "Level completed",
+        "Wobblin": "Level completed",
+        "Pressing Onward": "Level completed",
+        "Tippy Toes": "Level completed",
+        "Wet n Wiggly": "Level completed",
+        "Shmovin Shells": "Level completed",
+        "Cold and Spooked": "Level completed",
+        "Igneous Intrusion": "Level completed",
+        "Buzzed": "Level completed",
+        "Breaking in": "Level completed",
+        "The Fire Within": "Boss Exit",
+        "Looking Back": "Enter Credits",
+        "Credits Heart": "Grab Heart"
+    }
+
+}
