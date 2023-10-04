@@ -44,8 +44,8 @@
             "next": [
                 {
                     "address": "0x1493",
-                    "value": "0xFF",
-                    "type": "eq"
+                    "value": "0xF0",
+                    "type": "gt"
                 }
             ],
             "_comment": "Triggers on Orb in Vertical Level"
