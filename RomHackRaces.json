@@ -1,5 +1,6 @@
 {
     "name": "Romhack Races",
+    "_comment": "Made this in an attempt to have an autosplit config for any level the HR folks might send at us. might require knowing how the level exits.",
     "autostart": {
         "active": "1",
         "address": "0x0100",
@@ -35,6 +36,20 @@
             "value": "0x0030",
             "type": "eq",
             "_comment": "Triggers on the key in the keyhole audio"
+        },
+        {
+            "name": "Orb Exit",
+            "address": "0x1493",
+            "value": "0x00",
+            "type": "eq",
+            "next": [
+                {
+                    "address": "0x1493",
+                    "value": "0xFF",
+                    "type": "eq"
+                }
+            ],
+            "_comment": "Triggers on Orb in Vertical Level"
         },
         {
             "name": "Boss Exit",
