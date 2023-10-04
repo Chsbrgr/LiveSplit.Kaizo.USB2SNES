@@ -21,9 +21,10 @@ Check out their work here: https://github.com/usb2snes/LiveSplit.USB2SNESSplitte
 - Fxpak Pro (Install firmware based on these instructions: http://usb2snes.com/)
 - SNES Classic (See installation guide here: https://github.com/Skarsnik/QUsb2snes/blob/master/README.md#snes-classic-called-also-snes-mini)
 
-## Unsupported, but possible to work
+## Unsupported, but tested
 - QUSB2SNES software running, set up for LUA Bridge (Deprecated)
-- SNES9x-rr - a fork of SNES9x with support for Lua Scripts (Sorry retroarch players) (https://github.com/gocha/snes9x-rr/releases)
+    - ![image](https://github.com/Chsbrgr/LiveSplit.Kaizo.USB2SNES/assets/1546349/1952e3f5-d6cb-4a90-aaa2-d3accaf3cd4e)
+- SNES9x-rr - a fork of SNES9x with support for Lua Scripts (https://github.com/gocha/snes9x-rr/releases)
 
 # Installation
 
