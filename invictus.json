@@ -82,30 +82,17 @@
       ]
     },
     {
-        "name": "Invictus",
-        "address": "0x1DFB",
-        "value": "0x80",
-        "type": "eq",
-        "next": [
-             {
-                "address": "0x1DFB",
-                "value": "0x79",
-                "type": "eq"
-             }
-            ]
-    },
-    {
-        "name": "Kamek",
-        "address": "0x1DFB",
-        "value": "0xFF",
-        "type": "eq",
-        "next": [
-             {
-                "address": "0x1DFB",
-                "value": "0x6B",
-                "type": "eq"
-             }
-            ]
+      "name": "Invictus",
+      "address": "0x13C1",
+      "value": "61",
+      "type": "eq",
+      "more": [{
+        "address": "0x100",
+        "value": "0x0F",
+        "type": "eq"
+        }],
+      "_comment": "Looks for tile 61, used for the credits level, AND Game Mode 0F, which happens when fading to a level from the OW"
+      }]
     },
     {
       "name": "Green Palace",
@@ -119,19 +106,6 @@
       "value": "0x01",
       "type": "eq"
     },
-    {
-      "name": "Enter Credits",
-      "address": "0x13C1",
-      "value": "61",
-      "type": "eq",
-      "more": [{
-        "address": "0x100",
-        "value": "0x0F",
-        "type": "eq"
-      }],
-      "_comment": "Looks for tile 61, used for the credits level, AND Game Mode 0F, which happens when fading to a level from the OW"
-    }
-  ],
     "alias": {
         "Piranha Pipeway": "Normal Exit",
         "Scorched Earth": "Normal Exit",
@@ -155,8 +129,6 @@
         "Stellar": "Normal Exit",
         "Absolute Power": "Boss Exit",
         "Koopa Road": "Normal Exit",
-        "Invictus": "Invictus",
-        "Kamek": "Kamek",
-        "Credits": "Enter Credits"
+        "Invictus": "Invictus"
     }
 }
