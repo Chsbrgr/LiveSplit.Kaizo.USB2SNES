@@ -2,9 +2,18 @@
   "name": "Invictus",
   "autostart": {
     "active": "1",
-    "address": "0x1ED2",
-    "value": "0x11",
-    "type": "eq"
+    "name": "File Select Screen Active",
+    "address": "0x100",
+    "value": "08",
+    "type": "eq",
+    "next": [
+      {
+        "name": "After Player # Selected",
+        "address": "0x100",
+        "value": "0xA",
+        "type": "gt"
+      }
+    ]
   },
   "definitions": [
     {
@@ -109,8 +118,20 @@
       "address": "0x1f2a",
       "value": "0x01",
       "type": "eq"
+    },
+    {
+      "name": "Enter Credits",
+      "address": "0x13C1",
+      "value": "61",
+      "type": "eq",
+      "more": [{
+        "address": "0x100",
+        "value": "0x0F",
+        "type": "eq"
+      }],
+      "_comment": "Looks for tile 61, used for the credits level, AND Game Mode 0F, which happens when fading to a level from the OW"
     }
-    ],
+  ],
     "alias": {
         "Piranha Pipeway": "Normal Exit",
         "Scorched Earth": "Normal Exit",
@@ -130,9 +151,12 @@
         "Biohazard": "Normal Exit",
         "Bridge Secret": "Normal Exit",
         "Bridge Normal": "Key Exit",
-        "Kamek Wood": "Normal Exit",
+        "Kamek Woods": "Normal Exit",
         "Stellar": "Normal Exit",
         "Absolute Power": "Boss Exit",
-        "Koopa Road": "Normal Exit"
+        "Koopa Road": "Normal Exit",
+        "Invictus": "Invictus",
+        "Kamek": "Kamek",
+        "Credits": "Enter Credits"
     }
 }
