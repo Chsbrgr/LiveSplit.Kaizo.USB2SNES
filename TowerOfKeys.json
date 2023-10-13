@@ -1,0 +1,85 @@
+{
+	"name": "Tower Of Keys",
+	"autostart": {
+		"active": "1",
+		"address": "0x100",
+		"value": "0x08",
+		"type": "eq",
+		"next": [
+			{
+				"address": "0x0100",
+				"value": "0x0a",
+				"type": "gt"
+			}
+		],
+    "_comment": "Starts split after Player 1 select"
+	},
+	"definitions": [
+		{
+      "name": "Key Exit",
+      "address": "0x1434",
+      "value": "0x0030",
+      "type": "eq"
+    },
+		{
+			"name": "Room 1",
+			"address": "0x17BB",
+			"value": "0x25",
+			"type": "eq"
+		},
+    {
+			"name": "Room 2",
+			"address": "0x17BB",
+			"value": "0x26",
+			"type": "eq"
+		},
+    {
+			"name": "Room 3",
+			"address": "0x17BB",
+			"value": "0x27",
+			"type": "eq"
+		},
+    {
+			"name": "Room 4",
+			"address": "0x17BB",
+			"value": "0x28",
+			"type": "eq"
+		},
+    {
+			"name": "Room 5",
+			"address": "0x17BB",
+			"value": "0x29",
+			"type": "eq"
+		},
+    {
+			"name": "Room 6",
+			"address": "0x17BB",
+			"value": "0x2A",
+			"type": "eq"
+		},
+    {
+			"name": "Room 7",
+			"address": "0x17BB",
+			"value": "0x2B",
+			"type": "eq"
+		},
+    {
+			"name": "Room 8",
+			"address": "0x17BB",
+			"value": "0x2C",
+			"type": "eq"
+		},
+    {
+			"name": "Room 9",
+			"address": "0x17BB",
+			"value": "0x2e",
+			"type": "eq"
+		},
+		{
+			"name": "Room 10",
+			"address": "0x17BB",
+			"value": "0x2f",
+			"type": "eq"
+		}
+	]
+}
