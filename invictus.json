@@ -92,8 +92,8 @@
         "type": "eq"
         }],
       "_comment": "Looks for tile 61, used for the credits level, AND Game Mode 0F, which happens when fading to a level from the OW"
-      }]
-    },
+      }
+    ,
     {
       "name": "Green Palace",
       "address": "0x1f27",
@@ -105,7 +105,8 @@
       "address": "0x1f2a",
       "value": "0x01",
       "type": "eq"
-    },
+    }
+  ],
     "alias": {
         "Piranha Pipeway": "Normal Exit",
         "Scorched Earth": "Normal Exit",
