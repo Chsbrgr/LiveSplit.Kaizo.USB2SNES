@@ -1,0 +1,149 @@
+{
+	"name": "Super Mez World",
+	"autostart": {
+		"active": "1",
+		"address": "0x100",
+		"value": "0x08",
+		"type": "eq",
+		"next": [{
+			"address": "0x0100",
+			"value": "0x0a",
+			"type": "gt"
+		}]
+	},
+	"definitions": [{
+			"name": "Normal Exit",
+			"address": "0x1B99",
+			"value": "0x01",
+			"type": "eq",
+			"next": [{
+				"address": "0x1B99",
+				"value": "0x00",
+				"type": "eq"
+			}]
+		},
+		{
+			"name": "Key Exit",
+			"address": "0x1434",
+			"value": "0x00",
+			"type": "gt",
+			"next": [{
+				"address": "0x1434",
+				"value": "0x00",
+				"type": "eq"
+			}]
+		},
+		{
+			"name": "ORB Exit",
+			"address": "0x1DFB",
+			"value": "0x20",
+			"type": "gt",
+			"next": [{
+					"address": "0x1DFB",
+					"value": "0x03",
+					"type": "eq"
+				},
+				{
+					"address": "0x100",
+					"value": "0x0C",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Final ORB",
+			"address": "0x1DFB",
+			"value": "0x20",
+			"type": "gt",
+			"next": [
+				{
+					"address": "0x1DFB",
+					"value": "0x04",
+					"type": "eq"
+				},
+				{
+					"address": "0x1B99",
+                    "value": "0x01",
+                    "type": "eq"
+                },
+                {
+                    "address": "0x1B99",
+                    "value": "0x00",
+                    "type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Boss Exit",
+			"address": "0x13C6",
+			"value": "0x00",
+			"type": "gt",
+			"next": [{
+				"address": "0x13C6",
+				"value": "0x00",
+				"type": "eq"
+			}]
+		},
+		{
+			"name": "Punchy Palace",
+			"address": "0x1F27",
+			"value": "0x01",
+			"type": "eq",
+			"next": [{
+				"address": "0x100",
+				"value": "0x0B",
+				"type": "eq"
+			}]
+		},
+		{
+			"name": "Pipe Dream Palace",
+			"address": "0x1F29",
+			"value": "0x01",
+			"type": "eq",
+			"next": [{
+				"address": "0x100",
+				"value": "0x0B",
+				"type": "eq"
+			}]
+		},
+		{
+			"name": "Prime Palace",
+			"address": "0x1F28",
+			"value": "0x01",
+			"type": "eq",
+			"next": [{
+				"address": "0x100",
+				"value": "0x0B",
+				"type": "eq"
+			}]
+		}
+	],
+	"alias": {
+		"Tough Beginnings": "Normal Exit",
+		"Doodad Depths (R)": "Normal Exit",
+		"(R) Doodad Depths": "Normal Exit",
+		"!FYC": "Normal Exit",
+		"It Runs Thin (S)": "Normal Exit",
+		"(S) It Runs Thin": "Normal Exit",
+		"Punchy Palace": "Normal Exit",
+		"It Runs Thin (R)": "Normal Exit",
+		"(R)It Runs Thin": "Normal Exit",
+		"Slime Time": "Normal Exit",
+		"Groggy Ghouls": "Normal Exit",
+		"Sundown": "Normal Exit",
+		"Moletor Skills (S)": "Normal Exit",
+		"(S) Moletor Skills": "Normal Exit",
+		"Pipe Dream Palace": "Normal Exit",
+		"Moletor Skills (R)": "Normal Exit",
+		"(R) Moletor Skills": "Normal Exit",
+		"Departure": "Boss Exit",
+		"The End?": "Normal Exit",
+		"Moon Balloons": "ORB Exit",
+		"Prime Palace": "Normal Exit",
+		"Doodad Depths (S)": "Normal Exit",
+		"(S) Doodad Depths": "Normal Exit",
+		"The Return": "Normal Exit",
+		"Shadow Run": "Normal Exit",
+		"The Core": "Final ORB"
+	}
+}
