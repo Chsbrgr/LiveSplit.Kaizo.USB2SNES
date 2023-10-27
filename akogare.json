@@ -1,0 +1,166 @@
+{
+  "name": "Akogare Mario World",
+  "autostart": {
+    "active": "1",
+    "address": "0x100",
+    "value": "0x08",
+    "type": "eq",
+    "next": [
+        {
+            "address": "0x0100",
+            "value": "0x0A",
+            "type": "gt"
+        }
+    ]
+    },
+    "definitions": [
+        {
+          "name": "Normal Exit",
+          "address": "0x1B99",
+          "value": "0x01",
+          "type": "eq",
+          "next": [
+              {
+                  "address": "0x1B99",
+                  "value": "0x00",
+                  "type": "eq"
+              }
+          ]
+        },
+        {
+          "name": "100% Final Exit",
+          "address": "0x1DFB",
+          "value": "0x04",
+          "type": "eq"
+        },
+        {
+            "name": "Key Exit",
+            "address": "0x1434",
+            "value": "0x00",
+            "type": "gt",
+            "next": [
+                {
+                    "address": "0x1434",
+                    "value": "0x00",
+                    "type": "eq"
+                }
+            ]
+        },
+        {
+            "name": "ORB Exit",
+            "address": "0x1DFB",
+            "value": "0x03",
+            "type": "gt",
+            "next": [
+                {
+                    "address": "0x1DFB",
+                    "value": "0x03",
+                    "type": "eq"
+                },
+                {
+                    "address": "0x100",
+                    "value": "0x0C",
+                    "type": "eq"
+                }
+            ]
+        },
+        {
+            "name": "Boss Exit",
+            "address": "0x13C6",
+            "value": "0x00",
+            "type": "gt",
+            "next": [
+                {
+                    "address": "0x13C6",
+                    "value": "0x00",
+                    "type": "eq"
+                }
+            ]
+        },
+        {
+            "name": "any% Final Boss Exit",
+            "address": "0x13C6",
+            "value": "0x00",
+            "type": "gt"
+        },
+        {
+            "name": "Tubba's Palace",
+            "address": "0x1F28",
+            "value": "0x01",
+            "type": "eq",
+            "next": [
+                {
+                    "address": "0x100",
+                    "value": "0x0C",
+                    "type": "eq"
+                }
+            ]
+        },
+        {
+            "name": "Pickle's Palace",
+            "address": "0x1F27",
+            "value": "0x01",
+            "type": "eq",
+            "next": [
+                {
+                    "address": "0x100",
+                    "value": "0x0C",
+                    "type": "eq"
+                }
+            ]
+        },
+        {
+            "name": "Fritzef's Palace",
+            "address": "0x1F2A",
+            "value": "0x01",
+            "type": "eq",
+            "next": [
+                {
+                    "address": "0x100",
+                    "value": "0x0C",
+                    "type": "eq"
+                }
+            ]
+        }
+    ],
+    "alias": {
+        "Bullet Promenade": "Normal Exit",
+        "Super Koopa Hills": "Normal Exit",
+        "Cloon Cavern": "Normal Exit",
+        "The Toxic Passage": "Normal Exit",
+        "The Toxic Passage (S)": "Key Exit",
+        "(S) The Toxic Passage": "Key Exit",
+        "Tubba's Palace": "Tubba's Palace",
+        "The Toxic Passage (R)": "Normal Exit",
+        "(R) The Toxic Passage": "Normal Exit",
+        "Shiverthorn Hollow": "Normal Exit",
+        "Delfino Shores": "Normal Exit",
+        "Delfino Shores (S)": "Normal Exit",
+        "(S) Delfino Shores": "Normal Exit",
+        "Pickle's Palace": "Pickle's Palace",
+        "Delfino Shores (R)": "Normal Exit",
+        "(R)Delfino Shores": "Normal Exit",
+        "Labrys Abyss": "Normal Exit",
+        "The Watcher's Keep": "Boss Exit",
+        "Gridiron Ridge": "Normal Exit",
+        "Bridge of Moths": "Normal Exit",
+        "Forest of Abkhazia": "Normal Exit",
+        "The Living Earth": "Normal Exit",
+        "The Living Earth (S)": "Key Exit",
+        "(S) The Living Earth": "Key Exit",
+        "Fritzef's Palace": "Fritzef's Palace",
+        "The Living Earth (R)": "Normal Exit",
+        "(R) The Living Earth": "Normal Exit",
+        "Grim Shade Manor": "Boss Exit",
+        "Ossuary Rift": "Normal Exit",
+        "Whynot's Lookout": "ORB Exit",
+        "Underscore Burrows": "Normal Exit",
+        "Forgotten Acropolis": "any% Final Boss Exit",
+        "Backtrack Passage": "ORB Exit",
+        "The Gateway": "ORB Exit",
+        "Twilight Bridge": "Normal Exit",
+        "Celestial Rex": "Normal Exit",
+        "Australian Airways": "Normal Exit",
+        "Stormcrow's Alcazar": "100% Final Exit"
+    }
+}
