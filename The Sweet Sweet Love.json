@@ -1,0 +1,110 @@
+{
+  "name": "The Sweet Sweet Love",
+  "autostart": {
+    "active": "1",
+    "name": "File Select Screen Active",
+    "address": "0x100",
+    "value": "08",
+    "type": "eq",
+    "next": [
+      {
+        "name": "After Player # Selected",
+        "address": "0x100",
+        "value": "0xA",
+        "type": "gt"
+      }
+    ]
+  },
+  "igt": null,
+  "alias": null,
+  "definitions": [
+    {
+      "name": "Goal Tape Zoom Out",
+      "address": "0x1B99",
+      "value": "0x01",
+      "type": "eq",
+      "next": [
+          {
+              "address": "0x1B99",
+              "value": "0x00",
+              "type": "eq"
+          }
+      ],
+            "_comment": "This works for the normal goal tape, looks for the walking peace sign animation, triggers when screen fades to black after iris in."
+  },
+  {
+    "name": "Goal Tape Immediate",
+    "address": "0x906",
+    "value": "0x00",
+    "type": "eq",
+    "next": [
+        {
+            "address": "0x906",
+            "value": "0x01",
+            "type": "eq"
+        }
+    ],
+                "_comment": "This works for the normal goal tape, triggers immediately after crossing."
+},
+{
+  "name": "Orb Exit",
+  "address": "0x1493",
+  "value": "0x00",
+  "type": "eq",
+  "next": [
+      {
+          "address": "0x1493",
+          "value": "0xf0",
+          "type": "gt"
+      }
+  ],
+  "_comment": "Triggers on Orb in Vertical Level"
+},
+{
+    "name": "Key Exit",
+    "address": "0x1434",
+    "value": "0x30",
+    "type": "eq",
+    "_comment": "Triggers on the key in the keyhole, when the internal timer starts counting down.",
+    "next": [
+        {
+            "address": "0x1434",
+            "value": "0x30",
+            "type": "lt",
+            "_comment": "Added to prevent double splits on multiple key exits in a row."
+        }
+    ]
+},
+{
+  "name": "Boss Exit",
+  "address": "0x13C6",
+  "value": "0x00",
+  "type": "gt",
+  "_comment": "Triggers on any Boss Completed event"
+},
+  {
+  "name": "Yellow Switch Palace",
+  "address": "0x1F27",
+  "value": "0x01",
+  "type": "eq"
+},
+{
+  "name": "Green Switch Palace",
+  "address": "0x1F28",
+  "value": "0x01",
+  "type": "eq"
+},
+{
+  "name": "Red Switch Palace",
+  "address": "0x1F29",
+  "value": "0x01",
+  "type": "eq"
+},
+{
+  "name": "Blue Switch Palace",
+  "address": "0x1F2A",
+  "value": "0x01",
+  "type": "eq"
+}
+]
+}
