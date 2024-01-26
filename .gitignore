@@ -1,1 +1,4 @@
 LiveSplit.USB2SNESSplitter.dll
+DefinitionHelper/DefinitionHelper.exe
+DefinitionHelper/Newtonsoft.Json.dll
+DefinitionHelper/websocket-sharp.dll
