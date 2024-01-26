@@ -1,5 +1,6 @@
 {
     "name": "",
+    "_comment": "This config is designed for timing an individual level. if you want to use this for whole game, change autostart to eq 07 and gt 0a.",
     "autostart": {
         "active": "1",
         "address": "0x0100",
@@ -60,9 +61,17 @@
         {
             "name": "Key Exit",
             "address": "0x1434",
-            "value": "0x0030",
+            "value": "0x30",
             "type": "eq",
-            "_comment": "Triggers on the key in the keyhole audio"
+            "_comment": "Triggers on the key in the keyhole, when the timer starts counting down",
+            "next": [
+                {
+                    "address": "0x1434",
+                    "value": "0x30",
+                    "type": "lt",
+                    "_comment": "Added to prevent double splits"
+                }
+            ]
         },
         {
             "name": "Boss Exit",
@@ -70,6 +79,13 @@
             "value": "0x00",
             "type": "gt",
             "_comment": "Triggers on any Boss Completed event"
+        },
+        {
+            "name": "Peach Appears",
+            "address": "0x71",
+            "value": "0x0B",
+            "type": "eq",
+            "_comment": "Triggers When Peach appears at end of Bowser fight"
         },
             {
             "name": "Yellow Switch Palace",
